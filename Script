@@ -1,0 +1,53 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Stage 1 - Initialize') {
+            steps {
+                echo 'Running Stage 1: Initialize'
+            }
+        }
+
+        stage('Stage 2 - Checkout') {
+            steps {
+                echo 'Running Stage 2: Checkout'
+            }
+        }
+
+        stage('Stage 3 - Build') {
+            steps {
+                echo 'Running Stage 3: Build'
+            }
+        }
+
+        stage('Stage 4 - Test') {
+            steps {
+                echo 'Running Stage 4: Test'
+            }
+        }
+
+        stage('Stage 5 - Package') {
+            steps {
+                echo 'Running Stage 5: Package'
+            }
+        }
+
+        stage('Stage 6 - Deploy') {
+            steps {
+                echo 'Running Stage 6: Deploy'
+            }
+        }
+
+        stage('Stage 7 - Verify') {
+            steps {
+                echo 'Running Stage 7: Verify'
+            }
+        }
+
+        stage('Stage 8 - Cleanup') {
+            steps {
+                echo 'Running Stage 8: Cleanup'
+            }
+        }
+    }
+}
